@@ -10,8 +10,18 @@ body {
     background: #081130;
   }
 
-.game {
+  header {
+    width: 100%;
+    height: 9vh;
+    background: #986C2B;
+    position: absolute;
+}
+
+  .game {
     width: 95vw;
     height: 50vh;
     background: #21367E;
+    position: relative;
+    top: 15vh;
+    left: 2.5vw;
  }
