@@ -25,3 +25,22 @@ body {
     top: 15vh;
     left: 2.5vw;
  }
+
+ .game-description {
+    width: 70vw;
+    height: 25vh;
+    background: #3265C7;
+    position: relative;
+    left: 2.5vw;
+    top: 15vh;
+}
+
+.leader-board {
+    width: 23vw;
+    height: 25vh;
+    background: #193467;
+    float: right;
+    position: relative;
+    bottom: 10vh;
+    right: 2.5vw;
+}
