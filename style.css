@@ -1,0 +1,17 @@
+html {
+    height: 100%;
+  }
+
+body {
+    height: 100%;
+    margin: 0;
+    position: relative;
+    font-family: sans-serif;
+    background: #081130;
+  }
+
+.game {
+    width: 95vw;
+    height: 50vh;
+    background: #21367E;
+ }
