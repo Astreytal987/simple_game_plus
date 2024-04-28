@@ -1,13 +1,33 @@
-.head{
+.floating-strip {
+  display: flex;
+  position: fixed;
   top: 0;
-  margin-left: -10px;
-  height: 165px;
-  width: 155px;
-  margin: -3em 0 0 -5px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100%;
+  height: 40px;
+  background-color: #986C2B;
+  padding: 20px;
+}
+a{
+  color: #f0ece6;
+  text-decoration:none;
+  padding: 5%;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: -65px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.floating-strip button {
+  float: right;
+  margin-top: -60px;
+  margin-right:20px;
+  background-color: #986C2B;
+  border: none;
 }
 .rectangle{
-  width: 1600px;
+  width: 1200px;
   height: 450px;
-  background-color: rgb(53, 53, 198);
-  margin: 40px 0 0 40px;
+  background-color:  #21367E;
+  margin: 40px 0 0 25px;
 }
