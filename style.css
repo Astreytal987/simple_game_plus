@@ -43,3 +43,6 @@ a:hover{
     transform: rotate(-5deg);
     color: #080203
 }
+body{
+  background: #081130;
+}
