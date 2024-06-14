@@ -66,6 +66,138 @@ header {
   font-size: small;
 }
 
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.game-wrap {
+  width: 1200px;
+  height: 684px;
+  background: #193467;
+  position: relative;
+  margin-top: 90px;
+}
+
+.game-border {
+  position: absolute;
+}
+
+.game {
+  height: 450px;
+  width: 650px;
+  background: #976b2a;
+  position: absolute;
+  top: 117px;
+  left: 275px;
+}
+
+.game-button1 {
+  position: absolute;
+  height: 30px;
+  width: 50px;
+  right: 0;
+  border-radius: 45%;
+  background: #C00301;
+  margin-right: 119px;
+
+}
+
+.game-button1-first {
+  top: 59px;
+}
+
+.game-button1-second {
+  top: 141px;
+}
+
+.game-button1-third {
+  top: 223px;
+}
+
+.game-button2 {
+  position: absolute;
+  background: #A00301;
+  height: 52px;
+  width: 52px;
+  bottom: 0;
+  border-radius: 50%;
+}
+
+.game-button2-first {
+  left: 0;
+  margin-bottom: 65px;
+  margin-left: 103px;
+}
+
+.game-button2-second {
+  left: 0;
+  margin-bottom: 188px;
+  margin-left: 103px;
+}
+
+.game-button2-third {
+  right: 0;
+  margin-bottom: 65px;
+  margin-right: 107px;
+}
+
+.game-button2-fourth {
+  right: 0;
+  margin-bottom: 188px;
+  margin-right: 107px;
+}
+
+.game-sound-settings {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  opacity: 0;
+  width: 23px;
+  height: 23px;
+}
+
+.music-setting {
+  margin-top: 102px;
+  margin-right: 53px;
+}
+
+.music-setting+label {
+  position: absolute;
+  margin-top: 102px;
+  margin-right: 53px;
+  right: 0;
+  display: inline-flex;
+  align-items: center;
+}
+
+.in-game-sound-setting {
+  margin-top: 186px;
+  margin-right: 53px;
+}
+
+.in-game-sound-setting+label {
+  position: absolute;
+  margin-top: 186px;
+  margin-right: 53px;
+  right: 0;
+  display: inline-flex;
+  align-items: center;
+}
+
+.game-sound-settings+label::before {
+  content: '';
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background: radial-gradient(#478350, #2a4e30);
+}
+
+.game-sound-settings:checked+label::before {
+  background: radial-gradient(#4c4e57, #2A2B31);
+}
+
 footer {
   width: 100%;
   height: 5%;
