@@ -7,18 +7,237 @@
     </head>
     <body>
         <header>
-              <div class="floating-strip">
-                <button type="button">
-                    <img class="head" src="images/head.png" alt="Котик" width="162" height="155">
-                  </button>
-              <a href="index.html" class="cat">Простая игра про кота</button>
-              <a href="index.html" class="still">Ещё что-то</a>
-              <a href="index.html"class="will-be"> Что-то будет</a>
-              <a href="index.html" class="basement">Подвал</a></div>
+            <img src="/images/cat_head_fix.png" alt="cat_head" class="logo">
+            <img src="/images/cat_head_shadow_fix.png" alt="cat_head_shadow" class="logo-shadow">
+            <p class="logo-text">Простая игра про кота</p>
+            <div class="header-link-wrap">
+                 <a href="#game-window" class="header-links">Игра</a>
+                 <a href="#leaderboard-window" class="header-links">Таблица лидеров</a>
+                 <a href="#about-project-window" class="header-links">О проекте</a>
             </div>
         </header>
-        <div class="rectangle"></div>
-        <div class="game"><p class="text-game">Игра про милого котика, который не смотря неудачи на своём пути, не сдаётся, и с новыми силами вновь и вновь пытается достичь мечты о рыбах. Собирайте рыбок для набора очков, уворачивайтесь от препятствий! Над проектом старалась группа №5.</p></div>
-        <div class="score"><p class="text-score">Таблица лидеров:</p></div>
+        <main>
+            <div class="game-wrap" id="game-window">
+                <div class="game">
+                    <canvas></canvas>
+                </div>
+                <img src="/images/game-border-fix.png" alt="game-border" class="game-border" class="game-border">
+                <button class="game-button1 game-button1-first"></button>
+                <button class="game-button1 game-button1-second"></button>
+                <button class="game-button1 game-button1-third"></button>
+                <button class="game-button2 game-button2-first"></button>
+                <button class="game-button2 game-button2-second"></button>
+                <button class="game-button2 game-button2-third"></button>
+                <button class="game-button2 game-button2-fourth"></button>
+                <input type="checkbox" class="game-sound-settings music-setting" id="music">
+                <label for="music"></label>
+                <input type="checkbox" class="game-sound-settings in-game-sound-setting" id="sound">
+                <label for="sound"></label>
+            </div>
+            <div class="leaderboard" id="leaderboard-window">
+                <p>Таблица лидеров</p>
+                <div class="leaderboard-place-scroll-wrap" id="scroll">
+                    <div class="leaderboard-place" id="first-place">
+                        <p>1.</p>
+                        <p>0</p>
+                        <div class="leaderboard-info">
+                            <p>0</p>
+                            <img src="/images/fish_fix.png" alt="score" class="leaderboard-info-icon">
+                            <p>/</p>
+                            <p>0</p>
+                            <img src="/images/time.png" alt="time" class="leaderboard-info-icon">
+                        </div>
+                    </div>
+                    <div class="leaderboard-place" id="second-place">
+                        <p>2.</p>
+                        <p>0</p>
+                        <div class="leaderboard-info">
+                            <p>0</p>
+                            <img src="/images/fish_fix.png" alt="score" class="leaderboard-info-icon">
+                            <p>/</p>
+                            <p>0</p>
+                            <img src="/images/time.png" alt="time" class="leaderboard-info-icon">
+                        </div>
+                    </div>
+                    <div class="leaderboard-place" id="third-place">
+                        <p>3.</p>
+                        <p>0</p>
+                        <div class="leaderboard-info">
+                            <p>0</p>
+                            <img src="/images/fish_fix.png" alt="score" class="leaderboard-info-icon">
+                            <p>/</p>
+                            <p>0</p>
+                            <img src="/images/time.png" alt="time" class="leaderboard-info-icon">
+                        </div>
+                    </div>
+                    <div class="leaderboard-place">
+                        <p>4.</p>
+                        <p>0</p>
+                        <div class="leaderboard-info">
+                            <p>0</p>
+                            <img src="/images/fish_fix.png" alt="score" class="leaderboard-info-icon">
+                            <p>/</p>
+                            <p>0</p>
+                            <img src="/images/time.png" alt="time" class="leaderboard-info-icon">
+                        </div>
+                    </div>
+                    <div class="leaderboard-place">
+                        <p>5.</p>
+                        <p>0</p>
+                        <div class="leaderboard-info">
+                            <p>0</p>
+                            <img src="/images/fish_fix.png" alt="score" class="leaderboard-info-icon">
+                            <p>/</p>
+                            <p>0</p>
+                            <img src="/images/time.png" alt="time" class="leaderboard-info-icon">
+                        </div>
+                    </div>
+                    <div class="leaderboard-place">
+                        <p>6.</p>
+                        <p>0</p>
+                        <div class="leaderboard-info">
+                            <p>0</p>
+                            <img src="/images/fish_fix.png" alt="score" class="leaderboard-info-icon">
+                            <p>/</p>
+                            <p>0</p>
+                            <img src="/images/time.png" alt="time" class="leaderboard-info-icon">
+                        </div>
+                    </div>
+                    <div class="leaderboard-place">
+                        <p>7.</p>
+                        <p>0</p>
+                        <div class="leaderboard-info">
+                            <p>0</p>
+                            <img src="/images/fish_fix.png" alt="score" class="leaderboard-info-icon">
+                            <p>/</p>
+                            <p>0</p>
+                            <img src="/images/time.png" alt="time" class="leaderboard-info-icon">
+                        </div>
+                    </div>
+                    <div class="leaderboard-place">
+                        <p>8.</p>
+                        <p>0</p>
+                        <div class="leaderboard-info">
+                            <p>0</p>
+                            <img src="/images/fish_fix.png" alt="score" class="leaderboard-info-icon">
+                            <p>/</p>
+                            <p>0</p>
+                            <img src="/images/time.png" alt="time" class="leaderboard-info-icon">
+                        </div>
+                    </div>
+                    <div class="leaderboard-place">
+                        <p>9.</p>
+                        <p>0</p>
+                        <div class="leaderboard-info">
+                            <p>0</p>
+                            <img src="/images/fish_fix.png" alt="score" class="leaderboard-info-icon">
+                            <p>/</p>
+                            <p>0</p>
+                            <img src="/images/time.png" alt="time" class="leaderboard-info-icon">
+                        </div>
+                    </div>
+                    <div class="leaderboard-place">
+                        <p>10.</p>
+                        <p>0</p>
+                        <div class="leaderboard-info">
+                            <p>0</p>
+                            <img src="/images/fish_fix.png" alt="score" class="leaderboard-info-icon">
+                            <p>/</p>
+                            <p>0</p>
+                            <img src="/images/time.png" alt="time" class="leaderboard-info-icon">
+                        </div>
+                    </div>
+                    <div class="leaderboard-place">
+                        <p>11.</p>
+                        <p>0</p>
+                        <div class="leaderboard-info">
+                            <p>0</p>
+                            <img src="/images/fish_fix.png" alt="score" class="leaderboard-info-icon">
+                            <p>/</p>
+                            <p>0</p>
+                            <img src="/images/time.png" alt="time" class="leaderboard-info-icon">
+                        </div>
+                    </div>
+                    <div class="leaderboard-place">
+                        <p>12.</p>
+                        <p>0</p>
+                        <div class="leaderboard-info">
+                            <p>0</p>
+                            <img src="/images/fish_fix.png" alt="score" class="leaderboard-info-icon">
+                            <p>/</p>
+                            <p>0</p>
+                            <img src="/images/time.png" alt="time" class="leaderboard-info-icon">
+                        </div>
+                    </div>
+                    <div class="leaderboard-place">
+                        <p>13.</p>
+                        <p>0</p>
+                        <div class="leaderboard-info">
+                            <p>0</p>
+                            <img src="/images/fish_fix.png" alt="score" class="leaderboard-info-icon">
+                            <p>/</p>
+                            <p>0</p>
+                            <img src="/images/time.png" alt="time" class="leaderboard-info-icon">
+                        </div>
+                    </div>
+                    <div class="leaderboard-place">
+                        <p>14.</p>
+                        <p>0</p>
+                        <div class="leaderboard-info">
+                            <p>0</p>
+                            <img src="/images/fish_fix.png" alt="score" class="leaderboard-info-icon">
+                            <p>/</p>
+                            <p>0</p>
+                            <img src="/images/time.png" alt="time" class="leaderboard-info-icon">
+                        </div>
+                    </div>
+                    <div class="leaderboard-place">
+                        <p>15.</p>
+                        <p>0</p>
+                        <div class="leaderboard-info">
+                            <p>0</p>
+                            <img src="/images/fish_fix.png" alt="score" class="leaderboard-info-icon">
+                            <p>/</p>
+                            <p>0</p>
+                            <img src="/images/time.png" alt="time" class="leaderboard-info-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-project" id="about-project-window">
+                <div class="about-project-text-window">
+                    <p class="title">О проекте</p>
+                    <p>В 2024 году наш колледж устраивал серию групповых проектов среди первокурсников. Собравшись вместе наша команда много думала и решила, создать аркадную игру на базе HTML5 с прилагающийся к ней вёрсткой сайта.</p>
+                    <p>В главных ролях достопочтенный сэр кот, и не большой гардероб шкурок ему под стать. Управление происходит либо на стрелки ↑ ↓, либо на W S. Бегите вперёд собирая вкусную рыбу, ловко обходя все препятствия на своём пути.</p>
+                    <p>При проигрыше ваш счёт и время, проведённое в данной игровой сессии, заносится в таблицу лидеров. Старайтесь усердно занять призовые места в ней ,хай-роллеры, ночь ещё молода!</p>
+                    <p>Для расширения кругозора информации об проекте, в футере сайта приложены сторонние ссылки связанные с ним. Наша команда будет очень благодарна если вы поиграете в игру созданную нами и, если предоставится возможность, оставите впечатление отправив ваш фидбэк на нашу проектную почту: simplegameaboutcat@gmail.com</p>
+                </div>
+                <div class="foto_stripe" id="scroll">
+                    <img src="/images/photo_cat1.jpeg" alt="photo-cat1" class="photo">
+                    <img src="/images/photo_cat2.jpeg" alt="photo_cat2" class="photo">
+                    <img src="/images/photo_cat3.jpeg" alt="photo_cat3" class="photo">
+                    <img src="/images/photo_cat4.jpeg" alt="photo_cat4" class="photo">
+                    <img src="/images/photo_cat5.jpeg" alt="photo_cat5" class="photo">
+                    <img src="/images/photo_cat6.jpeg" alt="photo_cat6" class="photo">
+                    <img src="/images/photo_cat7.jpeg" alt="photo_cat7" class="photo">
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-link-wrap">
+                <a href="https://docs.google.com/presentation/d/1T8jngVcYwKnyCrc2Hx315xGB5Wk0DWtBNZUQWSYyvNE/edit#slide=id.g14d2792e9da_0_8" class="footer-links">
+                    <img src="images/google-slides-logo.png" alt="google-slides-logo" class="footer-images">
+                </a>
+                <a href="https://ru.hexlet.io/" class="footer-links">
+                    <img src="images/hexlet-logo.png" alt="hexlet-logo" class="footer-images">
+                </a>
+                <a href="https://github.com/Astreytal987/simple_game_plus" class="footer-links">
+                    <img src="images/github-logo.png" alt="github-logo" class="footer-images">
+                </a>
+                <a href="https://www.figma.com/design/dmGicFNPgDMafi1chqjwvH/Untitled?node-id=3-36&t=0ew9bv6KzedYIh1R-0" class="footer-links">
+                    <img src="images/figma-logo.png" alt="figma-logo" class="footer-images">
+                </a>
+            </div>
+        </footer>
     </body>
 </html>
