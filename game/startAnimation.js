@@ -2,9 +2,9 @@
 const canvas = document.querySelector("canvas");
 const context = canvas.getContext('2d');
 
-canvas.width = 1400;
+canvas.width = 650;
 let CANVAS_WIDTH = canvas.width;
-canvas.height = 650;
+canvas.height = 435;
 let CANVAS_HEIGHT = canvas.height;
 
 import { drawFon } from './drawFon.js';
@@ -34,7 +34,7 @@ const startAnimation = () => { // зона без setTimeOut
         const catHitBox = catRun(boxContext, speedGame); 
         const boxsHitBoxs = lineBlock(boxContext);
         if (colision(boxsHitBoxs, catHitBox)) {
-            context.drawImage(endGame, 0, 0, 1400, 650);
+            context.drawImage(endGame, 0, 0, 650, 450);
             isGameRunning = false;
             console.log(boxsHitBoxs)
             x = 1500
