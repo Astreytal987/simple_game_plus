@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/Astreytal987/simple_game_plus/issues"
   },
-  "homepage": "https://github.com/Astreytal987/simple_game_plus#readme"
+  "homepage": "https://github.com/Astreytal987/simple_game_plus#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.1"
+  }
 }
