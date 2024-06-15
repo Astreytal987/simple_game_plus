@@ -3,10 +3,99 @@
   src: url(/font/Silkscreen\ [RUS\ by\ Mr.Enot].ttf);
 }
 
-body {
-  background: #101F3C;
-  font-family: Silkscreen, sans-serif;
-  color: white;
+body{
+  background: #081130;
+  font-family: 'Silkscreen';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.block{ 
+  display: flex; 
+  flex-direction: column; 
+  align-items: flex-start; 
+  max-width: 1000px; 
+  width: 50%; 
+  height: 600px; 
+  background-color: #21367E; 
+  color: #f0ece6; 
+  padding: 20px; 
+  box-sizing: border-box; 
+} 
+.content { 
+  display: flex; 
+  flex-direction: column; 
+  width: 100%; 
+} 
+  .basic{ 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  max-width: 400px; 
+  text-align: justify; 
+  margin-left: 20px; 
+  } 
+  
+.subject{ 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  margin-bottom: 1em;  
+  margin-left: 120px; 
+} 
+.block .catBody{ 
+  margin-top: -310px; 
+  margin-left: 16em; 
+} 
+.block .plate{ 
+  margin-top: -72px; 
+  margin-left: 22em; 
+} 
+.block .fridge{ 
+  margin-top: 30px; 
+  margin-left: 170px; 
+} 
+.block .fish1{ 
+  margin-top: 5px; 
+  margin-left: 14em; 
+} 
+.block .fish2{ 
+  margin-top: -50px; 
+  margin-left: 18em; 
+} 
+.block .fish3{ 
+  margin-top: -50px; 
+  margin-left: 22em; 
+} 
+.container{ 
+  display: flex; 
+  justify-content: space-between; 
+  max-width: 1000px; 
+  width: 90%; 
+  height: 600px;  
+} 
+.block2{ 
+  height: 600px; 
+  width: 500px; 
+  background-color: #986C2B; 
+} 
+.meme1{ 
+  padding: 24px; 
+} 
+.meme2{ 
+  padding: 24px; 
+} 
+@media (max-width: 768px){ 
+.block { 
+  width: 90%; 
+  max-width: 90%; 
+  margin: 0 auto; 
+} 
+.basic { 
+  margin-left: 0; 
+} 
+.subject { 
+  margin-left: 0; 
+} 
 }
 
 header {
@@ -208,6 +297,7 @@ main {
   align-items: center;
   flex-direction: column;
   font-size: x-large;
+  top: -20px ;
 }
 
 .leaderboard-place {
