@@ -1,5 +1,3 @@
-// место для переменных
-
 
 export const drawFon = (boxContext) => {
     let [context, CANVAS_WIDTH, CANVAS_HEIGHT] = boxContext
