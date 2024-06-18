@@ -43,3 +43,21 @@ window.addEventListener("keydown", (e) => {
             break;
     }
 });
+
+const buttons = document.querySelectorAll('.game-wrap button');
+buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+        if(button.classList.contains('game-button2-second') || button.classList.contains('game-button2-fourth')) {
+            if(actualCatPositionIndex != 0) {
+                actualCatPositionIndex -= 1;
+            }
+        }
+
+        if(button.classList.contains('game-button2-third') || button.classList.contains('game-button2-first')) {
+            if(actualCatPositionIndex != 2) {
+                actualCatPositionIndex += 1;
+            }
+        }
+    });
+    
+})

@@ -111,48 +111,64 @@ header {
   align-items: center; 
 }
 
-.logo {
-  position: absolute;
-  padding-left: 5%;
-  transition: margin-left 0.3s ease-in;
-}
+.floating-strip { 
+  display: flex; 
+  position: fixed; 
+  top: 0; 
+  left: 50%; 
+  transform: translate(-50%, 0); 
+  width: 100%; 
+  height: 5%; 
+  background-color: #986C2B; 
+  padding: 20px; 
+  z-index: 999; 
+} 
+ 
+.logo{ 
+  color: #f0ece6; 
+  text-decoration:none; 
+  padding: 5%; 
+  font-size: 1.4vw; 
+  margin-left: -5%; 
+  margin-top: -4.5%; 
+  margin-right: 3%; 
+} 
+a{ 
+  color: #f0ece6; 
+  text-decoration:none; 
+  font-size: 1.4vw; 
+} 
 
-.logo:hover {
-  margin-left: 0.2%;
-}
-
-.logo:hover ~ .logo-text {
-  color: black;
-}
-
-.logo-shadow {
-  padding-left: 5.4%;
-  padding-top: 0.4%;
-}
-
-.logo-text {
-  padding-left: 1.5%;
-  font-size: large;
-  transition: color 1s;
-}
-
-.header-link-wrap {
-  position: absolute;
-  right: 0;
-  white-space: nowrap;
-  padding-right: 25%;
-}
-
-.header-links {
-  color: white;
-  text-decoration: none;
-  margin-left: 30%;
-  transition: font-size 0.5s;
-}
-
-.header-links:focus {
-  color: black;
-  font-size: small;
+.links{ 
+display: flex; 
+flex-direction: row; 
+align-items: center; 
+white-space: nowrap; 
+margin-left: 5%; 
+} 
+.links1{ 
+padding-right: 20%; 
+} 
+ 
+.floating-strip .head { 
+  float: right; 
+  margin-top: -60px; 
+  background-color: #986C2B; 
+  border: none; 
+} 
+ 
+.head:hover { 
+  background-color: #986C2B; 
+} 
+ 
+.head:active { 
+  background-color: #986C2B; 
+  transform: translateY(4px); 
+} 
+ 
+a:hover{ 
+    transform: rotate(-5deg); 
+    color: #080203; 
 }
 
 main {

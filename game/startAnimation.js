@@ -23,7 +23,6 @@ const endGame = new Image();
 endGame.src = "images\\endGame.png";
 
 let isGameRunning = true;
-console.log(isGameRunning);
 const startAnimation = () => { // зона без setTimeOut
     let boxContext = [context, CANVAS_WIDTH, CANVAS_HEIGHT];
     const animate = () => {
@@ -36,9 +35,6 @@ const startAnimation = () => { // зона без setTimeOut
         if (colision(boxsHitBoxs, catHitBox)) {
             context.drawImage(endGame, 0, 0, 650, 450);
             isGameRunning = false;
-            console.log(boxsHitBoxs)
-            x = 1500
-            console.log(isGameRunning);
             return;
         }
 
@@ -48,8 +44,8 @@ const startAnimation = () => { // зона без setTimeOut
 };
     startAnimation();
 
-const catHead = document.querySelector(".head");
-catHead.addEventListener("click", () => {
+const timeButt = document.querySelector(".game-button1-third");
+timeButt.addEventListener("click", () => {
     // Запускаем игру заново
     isGameRunning = true;
     startAnimation();
