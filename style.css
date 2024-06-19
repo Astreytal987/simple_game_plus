@@ -3,7 +3,7 @@
   src: url(/font/Silkscreen\ [RUS\ by\ Mr.Enot].ttf);
 }
 
-body{
+body {
   background: #081130;
   font-family: 'Silkscreen';
   display: flex;
@@ -24,13 +24,15 @@ body{
   color: #f0ece6; 
   padding: 20px; 
   box-sizing: border-box; 
-} 
+}
+
 .content { 
   display: flex; 
   flex-direction: column; 
   width: 100%; 
-} 
-  .basic{ 
+}
+
+.basic{ 
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
   max-width: 400px; 
   text-align: justify; 
@@ -41,49 +43,76 @@ body{
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
   margin-bottom: 1em;  
   margin-left: 120px; 
-} 
+}
+
 .block .catBody{ 
   margin-top: -310px; 
-  margin-left: 16em; 
-} 
+  margin-left: 16em;
+  width: 90px;
+  height: 90px;
+}
+
 .block .plate{ 
   margin-top: -72px; 
-  margin-left: 22em; 
-} 
+  margin-left: 22em;
+  width: 50px;
+  height: 50px;
+}
+
 .block .fridge{ 
   margin-top: 30px; 
-  margin-left: 170px; 
-} 
+  margin-left: 170px;
+  width: 80px;
+  height: 80px;
+}
+
+.fish-size {
+  width: 50px;
+  height: 50px;
+}
+
 .block .fish1{ 
   margin-top: 5px; 
   margin-left: 14em; 
-} 
+}
+
 .block .fish2{ 
   margin-top: -50px; 
   margin-left: 18em; 
-} 
+}
+
 .block .fish3{ 
   margin-top: -50px; 
   margin-left: 22em; 
-} 
+}
+
 .container{ 
   display: flex; 
   justify-content: space-between; 
   max-width: 1000px; 
   width: 90%; 
   height: 600px;  
-} 
+}
+
 .block2{ 
   height: 600px; 
   width: 500px; 
   background-color: #986C2B; 
-} 
+}
+
+.meme-size {
+  width: 450px;
+  height: 250px;
+}
+
 .meme1{ 
-  padding: 24px; 
-} 
+  padding: 24px;
+}
+
 .meme2{ 
   padding: 24px; 
-} 
+}
+
 @media (max-width: 768px){ 
 .block { 
   width: 90%; 
@@ -98,30 +127,16 @@ body{
 } 
 }
 
-header {
-  width: 100%;
-  height: 10%;
-  background: #976b2a;
-  display: flex;
-  z-index: 1;
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex; 
-  align-items: center; 
-}
-
 .floating-strip { 
-  display: flex; 
+  width: 100%;
+  height: 5%;
+  background: #986C2B;
+  display: flex;
+  z-index: 999;
   position: fixed; 
   top: 0; 
-  left: 50%; 
-  transform: translate(-50%, 0); 
-  width: 100%; 
-  height: 5%; 
-  background-color: #986C2B; 
+  left: 0;
   padding: 20px; 
-  z-index: 999; 
 } 
  
 .logo{ 
@@ -132,11 +147,18 @@ header {
   margin-left: -5%; 
   margin-top: -4.5%; 
   margin-right: 3%; 
-} 
+}
+
+.logo-image {
+  width: 162px;
+  height: 155px;
+}
+
 a{ 
   color: #f0ece6; 
   text-decoration:none; 
-  font-size: 1.4vw; 
+  font-size: 1.4vw;
+  transition: transform 0.5s;
 } 
 
 .links{ 
@@ -145,7 +167,8 @@ flex-direction: row;
 align-items: center; 
 white-space: nowrap; 
 margin-left: 5%; 
-} 
+}
+
 .links1{ 
 padding-right: 20%; 
 } 
@@ -169,6 +192,11 @@ padding-right: 20%;
 a:hover{ 
     transform: rotate(-5deg); 
     color: #080203; 
+}
+
+a:focus {
+  color: black;
+  transform: rotate(5deg);
 }
 
 main {
@@ -362,51 +390,6 @@ main {
 
 #third-place {
   background: linear-gradient(90deg, #DD7C21 0%, #D78536 20%, #FF9C3F 30%, #D78536 40%, #DD7C21 70%, #D78536 95%);
-}
-
-.about-project {
-  width: 1000px;
-  height: 600px;
-  background: #083087;
-  position: relative;
-  margin-top: 40px;
-  margin-bottom: 50px;
-}
-
-.about-project-text-window {
-  width: 450px;
-  height: 600px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  position: absolute;
-  left: 0;
-  margin-left: 50px;
-}
-
-.title {
-  font-size: x-large;
-}
-
-.foto_stripe {
-  width: 400px;
-  height: 560px;
-  position: absolute;
-  background: #986C2B;
-  top: 0;
-  right: 0;
-  margin-right: 50px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding-bottom: 40px;
-}
-
-.photo {
-  width: 320px;
-  margin-top: 40px;
-  border-left: 30px dashed #083087;
-  border-right: 30px dashed #083087;
 }
 
 footer {
