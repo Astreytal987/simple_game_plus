@@ -1,13 +1,14 @@
 {
+  "type": "module",
   "name": "simple_game_plus",
   "version": "1.0.0",
   "description": "This is a one-page website that includes the game along with a brief description.\r presentation - https://docs.google.com/presentation/d/12npV1WuJEfTsTg_gqa7PjMs7V00_gHe9KO81vrzc7YU/edit#slide=id.g10fb8bc67f7_0_6",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --watchAll --verbose"
   },
   "repository": {
-    "type": "git",
+    "type": "git ",
     "url": "git+ssh://git@github.com/Astreytal987/simple_game_plus.git"
   },
   "author": "",
@@ -19,6 +20,10 @@
   "dependencies": {
     "body-parser": "^1.20.2",
     "express": "^4.19.2",
+    "jest": "^29.7.0",
     "mongoose": "^8.4.1"
+  },
+  "devDependencies": {
+    "babel-core": "^7.0.0-bridge.0"
   }
 }
